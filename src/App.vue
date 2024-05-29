@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import GlobalComponent from './components/GlobalComponent.vue';
+import GlobalComponent from './components/common/GlobalComponent.vue';
 </script>
 
 <style scoped>

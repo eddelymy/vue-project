@@ -31,6 +31,15 @@ html, body {
 a:hover {
   background-color: #80CBC4;
   border-radius: 7px;
+  color: #0f172a;
+
+  &:focus {
+    color: #0f172a;
+  }
+}
+.activeParent,.activeParent:hover{
+  background-color: rgb(214, 239, 255);
+  border-radius: 7px;
   color: black;
 
   &:focus {
@@ -45,6 +54,6 @@ a:hover {
     @apply px-2 h-10 w-full rounded-md border border-[#e8e8e8] focus:outline-none focus:ring-0 focus:border-slate-300
   }
   .btn{
-    @apply rounded-md bg-slate-900 px-3 py-1 text-white hover:bg-slate-800
+    @apply rounded-md bg-[#0f172a] px-3 py-1 text-white hover:bg-slate-800
   }
 }

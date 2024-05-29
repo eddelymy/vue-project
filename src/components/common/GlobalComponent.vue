@@ -5,7 +5,7 @@
     <side-bar-comopenent />
     <div class="flex flex-col h-full">
       <header-component />
-      <div class="overflow-auto h-full w-full">
+      <div class="overflow-auto h-full w-full p-4">
         <RouterView />
       </div>
     </div>
