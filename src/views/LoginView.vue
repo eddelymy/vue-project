@@ -28,7 +28,7 @@
           </form>
       </div>
       <div class="max-[1000px]:hidden">
-          <img src="../assets/background.jpg" 
+          <img src="../assets/images/background.jpg" 
               alt="login image" 
               class="object-cover h-screen w-full" />
       </div>

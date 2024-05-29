@@ -15,13 +15,6 @@ const router = createRouter({
     },
     {
       path: '/',
-      // name:'globalComponent',
-      // component: () => import('../components/GlobalComponent.vue'),
-      // meta: {
-      //   title: 'E-Azura',
-      //   auth: true,
-      //   showBars: true
-      // },
       children: [
         {
           path: 'home',

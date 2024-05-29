@@ -8,7 +8,7 @@ export default {
     extend: {
       gridTemplateColumns: {
         gridColmn: 'auto, 1fr', 
-      }
+      },
     },
   },
   plugins: [],
