@@ -1,10 +1,10 @@
 <template>
-  <div class="h-16 bg-white shadow-md w-full flex flex-row justify-end px-4">
-    <button class="bg-transparent text-[#334155] hover:text-[#80CBC4] mr-5">
+  <div class="h-16 bg-white shadow-md border-b border-b-gray-200 w-full flex flex-row justify-end px-4">
+    <button class="bg-transparent text-[#0b212f] hover:text-[#80CBC4] mr-5">
       <font-awesome-icon :icon="faBell" />
     </button>
     <button 
-      class="bg-transparent text-[#334155] hover:text-[#80CBC4]"
+      class="bg-transparent text-[#0b212f] hover:text-[#80CBC4]"
       @click="logOut">
       <font-awesome-icon :icon="faArrowRightFromBracket" />
     </button> 

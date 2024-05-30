@@ -17,6 +17,7 @@ html, body {
   min-height: 100vh;
   background-color: white;
   font-family: 'Poppins';
+  font-size: 15px !important;
 }
 #app {
   width:100%;
@@ -43,13 +44,64 @@ a:hover {
   color: black;
 }
 
-/* ////////// */
+/* ////////// view */
+
+/* AddSubMenu1 */
+
+.dp-custom-input {
+  border: 1px solid #e8e8e8 !important;
+  border-radius: 0.375rem !important;
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+}
+input.dp__input_focus{
+ border-color: #cbd5e1 !important;
+ --tw-ring-color: #cbd5e1 !important;
+  --tw-ring-shadow: transparent !important;
+}
+.dp__icon{
+  fill:black !important;
+  width:16px !important;
+  height:16px !important;
+}
+.dp__arrow_top{
+  display: none;
+}
+
+.multiselect__tags{
+  border-radius: 0.375rem !important;
+  border: 1px solid #e8e8e8 !important;
+}
+span.multiselect__option--highlight {
+  background: #0b212f;
+}
+span.multiselect__option--highlight::after {
+  background: #0b212f;
+}
+/* ///DrawerComponent///// */
+
+.button-offcanvas {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+}
+.form-offcanvas {
+  height: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 
 @layer components {
   .text-input{
     @apply px-2 h-10 w-full rounded-md border border-[#e8e8e8] focus:outline-none focus:ring-0 focus:border-slate-300
   }
   .btn{
-    @apply rounded-md bg-[#0f172a] px-3 py-1 text-white hover:bg-slate-800
+    @apply rounded-md bg-[#0b212f] px-3 py-1 text-white hover:bg-slate-700
+  }
+  .reset{
+    @apply rounded-md bg-[#737373] px-3 py-1 text-white hover:bg-[#d4d4d4] hover:text-black
   }
 }

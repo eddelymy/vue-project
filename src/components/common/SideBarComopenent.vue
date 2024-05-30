@@ -1,11 +1,11 @@
 <template>
   <div 
-    class="flex flex-col relative h-full bg-[#0f172a] border border-[#0f172a] text-white max-h-full"
+    class="flex flex-col relative h-full bg-[#0b212f] border border-[#0b212f] text-white max-h-full"
     :class=" !isClosed ? 'w-96' : 'w-20'">
     <button 
         type="button" 
         @click="showMenu"
-        class="flex items-center absolute bg-slate-500 rounded-full border border-slate-500 text-white -right-3 top-4 px-2 py-1">
+        class="flex items-center absolute bg-[#80CBC4] rounded-full border border-[#80CBC4] text-[#0f172a] -right-3 top-4 px-2 py-1">
         <font-awesome-icon :icon="faChevronLeft" class=" text-sm" :class="{'rotate-180': isClosed}" />
     </button>
     <div 
@@ -26,7 +26,7 @@
     <div 
       class="w-[100%] h-full flex flex-col pt-5"
       >
-      <div class="px-5 grow pb-6 h-full">
+      <div class="px-5 grow pb-6 h-full overflow-auto">
         <div v-for="(menu,key) in menus" :key="key" 
           class="w-full relative"
           >
