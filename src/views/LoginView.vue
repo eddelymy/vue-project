@@ -48,7 +48,7 @@ function submit(){
     username:username.value,
     password:password.value
   }
-  router.push('/home')
+  router.push('/login')
   
 }
 </script>

@@ -27,7 +27,9 @@
       class="w-[100%] h-full flex flex-col pt-5"
       >
       <div class="px-5 grow pb-6 h-full">
-        <div v-for="(menu,key) in menus" :key="key" class="w-full relative">
+        <div v-for="(menu,key) in menus" :key="key" 
+          class="w-full relative"
+          >
           <MenuPopup v-show="showPopupMenu && menu.isOpen" @togglePopuMenu="closePopupMenu">
             <OnClickOutside v-if="isClosed" @trigger="menu.isOpen = false">
               <div  
@@ -42,16 +44,20 @@
               </div>
             </OnClickOutside>
           </MenuPopup>
-          <RouterLink v-if="menu.path" :to="menu.path" @click="deactivateAll" class="w-full flex px-2 items-center py-1">
-            <font-awesome-icon :icon="menu.icon" class="mr-2" />
-            <span v-show="!isClosed">{{ menu.name }}</span>
+          <RouterLink v-if="menu.path" :to="menu.path" 
+            @click="deactivateAll" 
+            class="w-full flex px-2 items-center py-1"
+            :class="{'flex justify-center' : isClosed}">
+            <font-awesome-icon :icon="menu.icon"/>
+            <span v-show="!isClosed" class="ml-2">{{ menu.name }}</span>
           </RouterLink>
           <div v-else class="mt-8">
             <div class="flex items-center cursor-pointer px-2" @click="toggleMenu(menu)"
-            :class="{'activeParent':isClosed && menu.isActive}">
-              <div class="grow">
-                <font-awesome-icon :icon="menu.icon" class="mr-2" />
-                <span v-show="!isClosed">{{ menu.name }}</span>
+            :class="{'activeParent':isClosed && menu.isActive}"
+            >
+              <div class="grow py-1" :class="{'flex justify-center' : isClosed}">
+                <font-awesome-icon :icon="menu.icon" />
+                <span v-show="!isClosed" class="ml-2">{{ menu.name }}</span>
               </div>
               <font-awesome-icon 
                 :icon="faChevronUp" 
@@ -140,15 +146,15 @@ const menus = ref(
       childreen:[
         {
           name:'SubMenu1',
-          path:'/SubMenu1'
+          path:'/Menu2/SubMenu1'
         },
         {
           name:'SubMenu2',
-          path:'/SubMenu2'
+          path:'/Menu2/SubMenu2'
         },
         {
           name:'SubMenu3',
-          path:'/SubMenu3'
+          path:'/Menu2/SubMenu3'
         }
       ]
     },
@@ -160,15 +166,15 @@ const menus = ref(
       childreen:[
         {
           name:'SubMenu1',
-          path:'/SubMenu1'
+          path:'/Menu3/SubMenu1'
         },
         {
           name:'SubMenu2',
-          path:'/SubMenu2'
+          path:'/Menu3/SubMenu2'
         },
         {
           name:'SubMenu3',
-          path:'/SubMenu3'
+          path:'/Menu3/SubMenu3'
         }
       ]
     }
@@ -199,6 +205,7 @@ function toggleMenu(menu){
   }
 }
 function showMenu(){
+  setMenus()
   isClosed.value = ! isClosed.value
 }
 function getActiveMenu(menu){

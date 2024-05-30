@@ -8,7 +8,7 @@ const router = createRouter({
       name: 'login',
       component: () => import('../views/LoginView.vue'),
       meta: {
-        title: 'Se connecter | E-Azura',
+        title: 'Se connecter | ProjectName',
         auth: false,
         showBars: false
       }
@@ -34,7 +34,7 @@ const router = createRouter({
               name:'SubMenu1',
               component: () => import('../views/SubMenu1.vue'),
               meta: {
-                title: 'E-Azura',
+                title: 'ProjectName',
                 auth: true,
                 showBars: true
               }
@@ -44,7 +44,7 @@ const router = createRouter({
               name:'SubMenu2',
               component: () => import('../views/HomeView.vue'),
               meta: {
-                title: 'E-Azura',
+                title: 'E-ProjectName',
                 auth: true,
                 showBars: true
               }
@@ -53,13 +53,81 @@ const router = createRouter({
               name:'SubMenu3',
               component: () => import('../views/HomeView.vue'),
               meta: {
-                title: 'E-Azura',
+                title: 'ProjectName',
                 auth: true,
                 showBars: true
               }
             }
           ]
-        }
+        },
+        // {
+        //   path: 'Menu2',
+        //   children:[
+        //     {
+        //       path: 'SubMenu1',
+        //       name:'SubMenu1',
+        //       component: () => import('../views/SubMenu1.vue'),
+        //       meta: {
+        //         title: 'ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     },
+        //     {
+        //       path: 'SubMenu2',
+        //       name:'SubMenu2',
+        //       component: () => import('../views/HomeView.vue'),
+        //       meta: {
+        //         title: 'E-ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     },{
+        //       path: 'SubMenu3',
+        //       name:'SubMenu3',
+        //       component: () => import('../views/HomeView.vue'),
+        //       meta: {
+        //         title: 'ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     }
+        //   ]
+        // },
+        // {
+        //   path: 'Menu3',
+        //   children:[
+        //     {
+        //       path: 'SubMenu1',
+        //       name:'SubMenu1',
+        //       component: () => import('../views/SubMenu1.vue'),
+        //       meta: {
+        //         title: 'ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     },
+        //     {
+        //       path: 'SubMenu2',
+        //       name:'SubMenu2',
+        //       component: () => import('../views/HomeView.vue'),
+        //       meta: {
+        //         title: 'E-ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     },{
+        //       path: 'SubMenu3',
+        //       name:'SubMenu3',
+        //       component: () => import('../views/HomeView.vue'),
+        //       meta: {
+        //         title: 'ProjectName',
+        //         auth: true,
+        //         showBars: true
+        //       }
+        //     }
+        //   ]
+        // }
       ]
     }
     
