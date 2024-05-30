@@ -26,7 +26,7 @@
     <div 
       class="w-[100%] h-full flex flex-col pt-5"
       >
-      <div class="px-5 grow pb-6 h-full overflow-auto">
+      <div class="px-5 grow pb-6 h-full">
         <div v-for="(menu,key) in menus" :key="key" 
           class="w-full relative"
           >
