@@ -184,11 +184,6 @@ const loading = ref(false)
 function getData(){
   console.log('hello')
 }
-function cancel(){
-    selectedColumn.value = null
-    selectedDateRange.value = null
-    selectedStatus.value = null
-}
 function onPageChange(newPage) {
     currentPage.value = newPage
 }
