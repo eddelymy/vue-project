@@ -50,21 +50,21 @@
                           type="button"
                           class="w-full p-1 mr-2 rounded-sm hover:bg-[#eef2ff] flex items-center"
                       >
-                          <i class="fa-solid fa-pen-to-square w-6" style="color:#4B5563"></i>
+                          <font-awesome-icon :icon="faPenToSquare" class="w-6" style="color:#4B5563"></font-awesome-icon>
                           <span>Edit</span>
                       </button>
                       <button
                           type="button"
                           class="w-full p-1 mr-2 rounded-sm hover:bg-[#eef2ff] flex items-center"
                       >
-                          <i class="fa-solid fa-copy w-6" style="color:#4B5563"></i>
+                          <font-awesome-icon :icon="faCopy" class="w-6" style="color:#4B5563"></font-awesome-icon>
                           <span>Duplicate</span>
                       </button>
                       <button
                           type="button"
                           class="w-full p-1 rounded-sm hover:bg-[#eef2ff] flex items-center"
                       >
-                          <i class="fa-solid fa-trash w-6" style="color:#EF5944;"></i>
+                          <font-awesome-icon :icon="faTrash" class="w-6" style="color:#EF5944;"></font-awesome-icon>
                           <span>Delete</span>
                       </button>
                   </action-list>
@@ -100,7 +100,7 @@ import PaginationBar from '../components/common/PaginationComponent.vue'
 import PageSize from '../components/common/TableSize.vue'
 import ActionList from '../components/common/ActionList.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faFileExport,faAdd} from '@fortawesome/free-solid-svg-icons'
+import {faFileExport,faPenToSquare,faCopy,faTrash} from '@fortawesome/free-solid-svg-icons'
 import {ref} from 'vue'
 
 const tableHead = ref([
