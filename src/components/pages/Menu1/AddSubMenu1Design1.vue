@@ -1,7 +1,7 @@
 <template>
   <button type="button" class="btn mr-3" @click="showOffCanvas">
     <font-awesome-icon :icon="faAdd" class="mr-1"/>
-    Add
+    Add (offcanvas)
   </button>
   <drawer-component :showDrawer="showDrawer" @close="showDrawer = false">
     <template #header>

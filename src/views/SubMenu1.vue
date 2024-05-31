@@ -2,6 +2,7 @@
   <div class="w-full h-full">
     <breadcrumb-component :pages="['Menu 1','SubMenu 1']"></breadcrumb-component>
     <div class="flex w-full justify-end mt-6">
+      <AddSubMenu1design2 @addData="getData"/>
       <AddSubMenu1 @addData="getData" />
       <button type="button" class="btn"> 
         <font-awesome-icon :icon="faFileExport" class="mr-1"/>
@@ -89,7 +90,8 @@
 </template>
 
 <script setup>
-import AddSubMenu1 from '../components/pages/Menu1/AddSubMenu1.vue'
+import AddSubMenu1 from '../components/pages/Menu1/AddSubMenu1Design1.vue'
+import AddSubMenu1design2 from '../components/pages/Menu1/AddSubMenuDesign2.vue'
 import BreadcrumbComponent from '../components/common/BreadcrumbComponent.vue'
 import SearchComponent from '../components/common/SearchComponent.vue'
 import SortComponent from '../components/common/SortComponent.vue'

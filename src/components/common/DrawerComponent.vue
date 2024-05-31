@@ -21,7 +21,7 @@
 
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {faCircleXmark,faXmark} from '@fortawesome/free-solid-svg-icons'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
 
 const props = defineProps({
   showDrawer: {
